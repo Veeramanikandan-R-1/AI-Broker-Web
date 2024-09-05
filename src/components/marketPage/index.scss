@@ -1,0 +1,616 @@
+@import "../../variables.scss";
+
+.market-section-container {
+    width: 100%;
+
+    .heading {
+        margin: 10px;
+        font-weight: 400;
+        font-size: 16px;
+        width: 100%;
+    }
+
+    .signup-section {
+        margin: 20px 10px;
+        display: flex;
+        align-items: center;
+        border-radius: 10px;
+        background: $background-primary;
+        background: $background-primary-gradient;
+        padding: 20px;
+
+        .text-content {
+            width: 100%;
+
+            .main-text {
+                font-weight: bold;
+                font-size: 12px;
+            }
+
+            .sub-text {
+                margin-top: 10px;
+                font-size: 10px;
+            }
+        }
+
+        .button-container {
+            margin: 0 auto;
+            width: 100%;
+
+            button {
+                float: right;
+                font-size: 10px;
+            }
+        }
+
+        .button-content {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            margin-left: auto;
+
+            svg {
+                font-size: 12px;
+            }
+        }
+    }
+
+    .top-list-container {
+        display: flex;
+        gap: 10px;
+
+        .card-container {
+            width: 240px;
+            background-color: $primary-white;
+            border-radius: 10px;
+            margin: 10px;
+            padding: 10px;
+
+            .head-section {
+                height: 30px;
+                display: flex;
+                align-items: center;
+
+                .heading {
+                    font-size: 13px;
+                    font-weight: 500;
+                }
+
+                svg {
+                    font-size: 20px;
+                    margin-left: 20px;
+                    width: 30px;
+                    background-color: $background-secondary;
+                    border-radius: 2.5px;
+                }
+            }
+
+            .sub-headings {
+                display: flex;
+                justify-content: space-between;
+
+                .sub-heading {
+                    margin: 10px;
+                    text-transform: uppercase;
+                    font-size: 8px;
+                }
+            }
+
+            .data-sec {
+                margin: -10px 0px -5px 0px;
+            }
+
+            .data-row {
+                display: flex;
+                align-items: center;
+                margin-bottom: -5px;
+
+                .profile-pic {
+                    width: 20px;
+                    height: 20px;
+                    border-radius: 50px;
+                    margin-left: 10px;
+                }
+
+                .name-sec {
+                    margin: 10px;
+                    font-size: 10px;
+
+                    .main-name {
+                        font-weight: 425;
+                    }
+
+                    .short-name {
+                        opacity: 0.8;
+                        font-size: 9px;
+                        margin-top: 1px;
+                    }
+                }
+
+                .value-sec {
+                    margin: 10px;
+                    float: right;
+                    margin-left: auto;
+                    font-size: 12px;
+
+                    .main-value {
+                        margin-left: auto;
+                        font-size: 10px;
+                        font-weight: 900px;
+                        text-align: end;
+                    }
+
+                    .sec-value {
+                        display: flex;
+                        gap: 5px;
+                        font-size: 8px;
+                        margin-top: 2.5px;
+                        align-items: center;
+
+                        .time {
+                            background: $background-primary;
+                        }
+
+                        .status {
+                            font-weight: 500;
+                            color: $primary-success;
+                            margin-top: 1px;
+                            margin-left: 3px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .all-token-container {
+        margin: 10px;
+        
+        .heading {
+            margin: 10px;
+            font-weight: 400;
+            font-size: 16px;
+            width: 100%;
+        }
+
+        .row-container {
+            overflow-x: auto;
+            overflow-y: hidden;
+        }
+
+        .token-row {
+            margin: 10px 0px;
+            display: flex;
+            min-width: max-content;
+            align-items: center;
+            background-color: $primary-white;
+            border-radius: 5px;
+            padding: 10px;
+            max-width: 1000px;
+
+            .icon-column {
+                height: auto;
+                display: flex;
+                flex-direction: column;
+                width: 20px;
+                align-items: center;
+                justify-content: center;
+                gap: 20px;
+                color: $primary-blue;
+                font-size: 12px;
+                font-weight: 500;
+                margin-right: 7.5px;
+
+                .favorite {
+                    font-size: 12px;
+                    cursor: pointer;
+                }
+
+                svg {
+                    cursor: pointer;
+                }
+            }
+
+            .col-wrap {
+                display: flex;
+                flex-direction: column;
+                gap: 5px;
+
+                .supply-status {
+                    opacity: 0.8;
+                    font-weight: 500;
+                    font-size: 9px;
+                }
+            }
+
+            .row-wrap {
+                display: flex;
+                flex-direction: column;
+
+                .supply-status {
+                    font-size: 9px;
+                    opacity: 0.8;
+                    margin-top: 2px;
+                }
+
+                .token-row1 {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+
+                    .token-name-container,
+                    .token-name {
+                        display: flex;
+                        align-items: center;
+                        font-size: 12px;
+                        font-weight: 400;
+                        gap: 5px;
+                    }
+
+                    .token-name-container {
+                        margin: 10px 10px 10px 0px;
+                        display: flex;
+                        align-items: center;
+
+                        .token-icon {
+                            width: 22.5px;
+                            height: 22.5px;
+                            border-radius: 22.5px;
+                        }
+
+                        .token-id {
+                            font-weight: 500;
+                            font-size: 8px;
+                            opacity: 0.5;
+                            margin-top: 1px;
+                        }
+                    }
+
+                    .token-value {
+                        font-size: 12px;
+                        font-weight: 500;
+                    }
+                }
+
+                .token-row2,
+                .min-max-values {
+                    text-wrap: nowrap;
+                    display: flex;
+                    align-items: center;
+                    display: flex;
+                    font-size: 12px;
+                    gap: 5px;
+
+                    .opacity-value {
+                        opacity: 0.5;
+                        font-weight: 500;
+                    }
+
+                    p {
+                        font-size: 9px;
+                        margin-right: 2.5px;
+                    }
+
+                    .value {
+                        font-weight: 600;
+                        opacity: 1 !important;
+                    }
+
+                    .container {
+                        background-color: $background-secondary;
+                        height: 5px;
+                        border-radius: 10px;
+                    }
+
+                    .container>div {
+                        border-radius: 10px;
+                        height: 4px !important;
+                        background-color: $primary-blue !important;
+                    }
+
+                    .barCompleted {
+                        background-color: $primary-blue;
+                        height: 4px;
+                    }
+
+                    .label {
+                        font-size: 20px;
+                        color: green;
+                        display: inline;
+                        visibility: hidden;
+                    }
+
+                    .stock-status {
+                        background-color: $primary-white;
+                        font-size: 9px;
+                        font-weight: 500;
+                        margin-top: 0px;
+                    }
+
+                    p {
+                        background-color: $background-secondary;
+                    }
+
+                    div[role="progressbar"] {
+                        width: 80px;
+
+                    }
+                }
+
+                .min-max-values {
+                    padding: 15px 0px;
+                    justify-content: space-between;
+
+                    p {
+                        background-color: $primary-white !important;
+                    }
+                }
+            }
+
+
+            .market-cap,
+            .volume-sec,
+            .supply-sec,
+            .holder-sec,
+            .sentiment-sec {
+                min-width: fit-content;
+                font-size: 12px;
+                height: 110px;
+                padding: 5px 0px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                gap: 5px;
+                margin-left: 15px;
+
+                .value {
+                    margin-bottom: -10px;
+                }
+
+                .value {
+                    font-weight: 500;
+                    font-size: 12px;
+                }
+
+                .sec-heading,
+                .opacity-text {
+                    opacity: 0.5;
+                    font-weight: 500;
+                    font-size: 9.5px;
+                }
+
+                .opacity-text {
+                    font-size: 8.5px;
+                }
+
+                .row-wrap {
+                    display: flex;
+                    flex-direction: row;
+                    gap: 10px;
+                    margin: 0px;
+
+                    .status {
+                        background-color: $primary-white;
+                        font-size: 9px;
+                        font-weight: 500;
+                    }
+
+                    .time {
+                        background-color: $background-secondary;
+                        font-size: 10px;
+                    }
+                }
+
+                .vol-per-cap {
+                    font-weight: 600;
+                    font-size: 9px;
+                }
+            }
+
+            .market-cap {
+                padding-bottom: 20px;
+            }
+
+            .holder-sec {
+                .supply-status {
+                    margin-top: 5px;
+                    font-size: 9px;
+                }
+
+                .chart-container {
+                    width: 100px;
+                    height: 60px !important;
+                    position: relative;
+                    margin-bottom: -15px;
+
+                    svg {
+                        position: absolute;
+                        width: 100px;
+                        height: 60px;
+                        top: 0;
+                        left: 0;
+                        margin-left: -10px;
+                        margin-top: -10px;
+                    }
+
+                    .MuiChartsAxis-root,
+                    .MuiChartsAxis-directionX,
+                    .MuiChartsAxis-bottom {
+                        display: none I !important;
+                    }
+
+                    g[transform='translate(0, 250)'],
+                    g[transform='translate(50, 0)'] {
+                        display: none;
+                    }
+
+                    .css-1la267r-MuiAreaElement-root {
+                        fill: $background-secondary;
+                    }
+
+                    .css-10vg0a6-MuiResponsiveChart-container {
+                        width: 100px;
+                    }
+
+                    .css-wn5hww-MuiLineElement-root {
+                        stroke: $primary-blue;
+                    }
+                }
+            }
+
+            .volume-sec,
+            .supply-sec {
+                .dex-vol {
+                    margin-top: -2.5px;
+                }
+
+                .container {
+                    margin: 5px 0px;
+                    background-color: $background-secondary;
+                    height: 5px;
+                    border-radius: 10px;
+                }
+
+                .container>div {
+                    border-radius: 10px;
+                    height: 4px !important;
+                    background-color: $primary-blue !important;
+                }
+
+                .barCompleted {
+                    background-color: $primary-blue;
+                    height: 4px;
+                }
+
+                .label {
+                    font-size: 20px;
+                    color: green;
+                    display: inline;
+                    visibility: hidden;
+                }
+            }
+
+            .sentiment-sec {
+                .container {
+                    margin: 5px 0px;
+                    background-color: $primary-red;
+                    height: 4px;
+                    border-radius: 10px;
+                }
+
+                .container>div {
+                    border-radius: 10px;
+                    height: 4px !important;
+                    background-color: $primary-success !important;
+                }
+
+                .barCompleted {
+                    background-color: $primary-blue;
+                    height: 4px;
+                }
+
+                .label {
+                    font-size: 20px;
+                    color: green;
+                    display: inline;
+                    visibility: hidden;
+                }
+            }
+        }
+
+        .social-main {
+            padding: 5px;
+            display: flex;
+            gap: 15px;
+            height: 110px;
+            margin-left: 15px;
+
+            .social-cont {
+                min-width: fit-content;
+                font-size: 12px;
+
+                .sec-container {
+                    display: flex;
+                    gap: 20px;
+                    align-items: center;
+                    justify-content: center;
+                    height: 100%;
+                }
+
+                .heading {
+                    opacity: 0.5;
+                    font-weight: 500;
+                    font-size: 9.5px;
+                    margin: 0px;
+                }
+
+                .social-sec {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 2px;
+                    align-items: center;
+                    justify-content: center;
+
+                    svg {
+                        font-size: 10px !important;
+                        color: $primary-white;
+                        margin-bottom: 7.5px;
+                    }
+
+                    .discord-icon {
+                        background-color: $background-discord;
+                    }
+
+                    .twitter-icon {
+                        background-color: $background-twitter;
+                    }
+
+                    .discord-icon,
+                    .twitter-icon {
+                        height: 25px;
+                        width: 25px;
+                        border-radius: 25px;
+                        padding: 5px;
+                    }
+
+                    .following {
+                        margin-top: 10px;
+                        font-weight: 500;
+                        font-size: 10px;
+                    }
+
+                    .status {
+                        margin-top: 2.5px;
+                        font-weight: 500;
+                        font-size: 9px;
+                    }
+
+                }
+            }
+        }
+
+        .sentiment-sec {
+            .date-time {
+                font-size: 8px;
+                opacity: 0.5;
+                width: 100px;
+            }
+
+            .col-wrap {
+                p {
+                    font-size: 10px;
+                    text-align: center;
+                    margin: 5px 0px;
+                }
+
+                ;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:1200px) {
+    .top-list-container {
+        flex-wrap: wrap;
+    }
+}

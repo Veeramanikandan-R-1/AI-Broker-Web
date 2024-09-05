@@ -1,0 +1,149 @@
+@import "../../variables.scss";
+
+.left-menu-container {
+    position: relative;
+    width: 100%;
+    height: 97.5vh;
+    display: flex;
+    flex-direction: column;
+
+    .logo-container {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+
+        .logo {
+            width: 110px;
+            height: 50px;
+        }
+    }
+
+    .profile-section {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 10px;
+        border-radius: 5px;
+        background: $background-primary;
+        background: $background-primary-gradient;
+        padding: 15px 0px 5px 0px;
+
+
+        .profile-pic {
+            width: 40px;
+            height: 40px;
+            border-radius: 50px;
+        }
+
+        .name {
+            font-size: 14px;
+            font-weight: 400;
+            margin: 5px 0px 3px 0px;
+        }
+
+        .verified-icon {
+            display: flex;
+            align-items: center;
+            gap: 2px;
+            font-size: 10px;
+            margin: 2px 0px 5px 0px;
+
+            .icon {
+                color: $primary-success;
+                font-weight: 500;
+            }
+        }
+    }
+
+    .balance-sec {
+        margin: 10px;
+        text-align: center;
+
+        .balance {
+            font-size: 12px;
+        }
+
+        .amount-sec {
+            margin-top: 5px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .bal-amount {
+                font-size: 12px;
+            }
+
+            .status-amount {
+                margin-left: 2.5px;
+                font-size: 10px;
+                color: $primary-success;
+                font-weight: 400;
+            }
+        }
+    }
+
+    .nav-links {
+        margin-top: 7.5px;
+
+        .nav-link {
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            color: $primary-dark;
+            width: 100%;
+            margin: 5px 0px;
+            padding: 15px 0px 15px 15px;
+            font-size: 12px;
+            gap: 5px;
+            height: 25px;
+            background: $primary-white;
+            border-radius: 2px;
+
+            div {
+                svg {
+                    font-size: 14px;
+                    margin-right: 7.5px;
+                }
+            }
+
+            &:hover {
+                background-color: $primary-blue !important;
+                color: $primary-white;
+            }
+        }
+    }
+
+    .upgrade-sec {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 5px 20px 10px 20px;
+        margin-top: auto;
+        border: 1px solid $primary-blue;
+        border-radius: 3px;
+        padding: 3px 10px;
+        cursor: pointer;
+
+        .text {
+            font-size: 8px;
+        }
+
+        .highlight {
+            font-weight: 500;
+            font-size: 10px;
+        }
+
+        .coin-img {
+            width: 20px;
+            height: 20px;
+            margin-left: 10px;
+        }
+    }
+
+    .upgrade-sec {
+        -webkit-box-shadow: 0 0 7.5px $primary-blue;
+        box-shadow: 0 0 7.5px $primary-blue;
+
+    }
+}

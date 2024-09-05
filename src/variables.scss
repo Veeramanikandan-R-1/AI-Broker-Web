@@ -1,0 +1,15 @@
+$background-secondary: #eef0fc;
+$primary-success: rgb(0, 176, 0);
+$primary-dark: #000;
+$primary-blue: hwb(218 17% 0%);
+$primary-red: red;
+$primary-white: #fff;
+$background-primary: rgb(215, 244, 248);
+$background-primary-gradient: linear-gradient(90deg, rgba(215, 244, 248, 1) 0%, rgba(179, 213, 250, 1) 44%, rgba(149, 144, 240, 1) 100%);
+$background-twitter: #16b7e6;
+$background-discord: #505a9f;
+
+:export {
+    primary-success: $primary-success;
+    primary-red: $primary-red
+}
